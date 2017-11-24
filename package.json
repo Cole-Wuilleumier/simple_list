@@ -1,0 +1,23 @@
+{
+  "name": "simple_list",
+  "version": "1.0.0",
+  "description": "This is List class created in nodejs and a few examples using the list.",
+  "main": "List.js",
+  "dependencies": {
+    "readline-sync": "^1.4.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cole-Wuilleumier/simple_list.git"
+  },
+  "author": "Cole Wuilleumier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cole-Wuilleumier/simple_list/issues"
+  },
+  "homepage": "https://github.com/Cole-Wuilleumier/simple_list#readme"
+}

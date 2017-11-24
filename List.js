@@ -1,3 +1,5 @@
+module.exports = List;
+
 function List(){
     //properties
     this.listSize = 0;
@@ -22,7 +24,7 @@ function List(){
     this.moveTo = moveTo;
     this.getElement = getElement;
     this.contains = contains;
-}
+    }
 
 function append(element){
     this.dataStore[this.listSize++] = element;
@@ -93,7 +95,7 @@ function previous(){
 }
 
 function next(){
-    return this.dataStore[++this.pos];
+    return this.dataStore[this.pos++];
 }
 
 function hasNext(){
@@ -123,7 +125,7 @@ function end(){
 function currPos(){
     return this.pos;
 }
-
+/*
 var myList = new List();
 
 myList.append("Cole");
@@ -145,3 +147,4 @@ console.log(myList.next());
 myList.end();
 console.log(myList.getElement());
 console.log(myList.previous());
+*/
