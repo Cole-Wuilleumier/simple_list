@@ -31,10 +31,11 @@ function putstr(question){
 //End of wrappers
 
 function createArr(file) {
-    var arr = read(file).split('\n');
+    var arr = read(file).split("\n");
     for(var i in arr){
-        arr[i] = arr[i].trim();
+        arr[i] = arr[i].trim();//trims whitespace off the ends of each movie
     }
+     arr = arr.filter(entry => /\S/.test(entry)); //removes elements that are just blank lines or whitespace
     return arr;
 }
 
@@ -80,6 +81,6 @@ while(name != "exit" || movie != "exit"){
     checkOut(name, movie, movieList, customers);
     print("Customer Rentals: ");
     displayList(customers);
-   // print("Movies Now Available: \n");
-   // displayList(movieList);
+    print("Movies Now Available: \n");
+    displayList(movieList);
 }
